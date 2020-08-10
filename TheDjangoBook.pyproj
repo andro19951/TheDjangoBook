@@ -31,6 +31,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="airlines\admin.py" />
+    <Compile Include="airlines\apps.py" />
+    <Compile Include="airlines\migrations\__init__.py" />
+    <Compile Include="airlines\models.py" />
+    <Compile Include="airlines\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="airlines\tests.py" />
+    <Compile Include="airlines\views.py" />
+    <Compile Include="airlines\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="myapp\admin.py" />
     <Compile Include="myapp\apps.py" />
@@ -66,6 +76,7 @@
     <Compile Include="TheDjangoBook\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="airlines\templates\airlines\index.html" />
     <Content Include="db.sqlite3" />
     <Content Include="myapp\templates\myapp\index.html" />
     <Content Include="myapp\templates\myapp\greet.html" />
@@ -87,12 +98,12 @@
     <Content Include="tasks\templates\tasks\index.html" />
     <Content Include="tasks\templates\tasks\add.html" />
     <Content Include="tasks\templates\tasks\layout.html" />
-    <Content Include="TheDjangoBook\__pycache__\settings.cpython-37.pyc" />
-    <Content Include="TheDjangoBook\__pycache__\urls.cpython-37.pyc" />
-    <Content Include="TheDjangoBook\__pycache__\wsgi.cpython-37.pyc" />
-    <Content Include="TheDjangoBook\__pycache__\__init__.cpython-37.pyc" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="airlines\" />
+    <Folder Include="airlines\migrations\" />
+    <Folder Include="airlines\templates\" />
+    <Folder Include="airlines\templates\airlines\" />
     <Folder Include="myapp\templates\" />
     <Folder Include="myapp\templates\myapp\" />
     <Folder Include="myapp\__pycache__\" />
@@ -114,7 +125,6 @@
     <Folder Include="TheDjangoBook\" />
     <Folder Include="myapp\" />
     <Folder Include="myapp\migrations\" />
-    <Folder Include="TheDjangoBook\__pycache__\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />

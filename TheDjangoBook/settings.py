@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'myapp',
     'newYear',
     'tasks',
+    'airlines',
 ]
 
 # Middleware framework
